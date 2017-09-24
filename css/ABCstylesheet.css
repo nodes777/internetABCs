@@ -1,0 +1,86 @@
+body
+{
+background-color:black;
+}
+
+ul
+{
+text-decoration: none;
+color:floralwhite;
+font-family: 'Cousine', monospace;
+font-size: 1em;
+line-height: 190%;
+list-style-type: none;
+}
+
+ul:hover
+{
+color: aqua;
+}
+
+a
+{
+text-decoration: none; 
+font-family: 'Cousine', monospace;
+font-size: 1.9em;
+color: floralwhite;
+line-height: 190%;
+}
+
+a:hover
+{
+color:#6825E8; 
+text-decoration:none;
+color:peachpuff;
+font-family: 'Cousine', monospace;
+font-size: 1.9em;
+line-height: 190%;
+}
+
+a:visited
+{
+text-decoration: none;
+font-family: 'Cousine', monospace;
+font-size: 1.9em;
+line-height: 190%;
+text-decoration-color: none;
+}
+
+a:active
+{
+text-decoration: none;
+font-family: 'Cousine', monospace;
+font-size: 1.9em;
+color: floralwhite;
+line-height: 190%;
+}
+
+a:focus
+{
+text-decoration: none;
+}
+
+.list
+{
+margin-top: 30px;
+text-align: right;
+}
+
+.list:hover
+{
+color:gold;
+}
+
+.footnote
+{
+margin-top: 240px;
+}
+
+p
+{
+font-family: 'Cousine', monospace;
+font-size: 1em;
+color: floralwhite;
+line-height: 110%;
+}
+
