@@ -1,24 +1,25 @@
 <html> <!-- this starts the html page -->
 
 <head> <!-- this always goes in html tag -->
-   
+
      <meta charset="utf-8">
-    <!-- tells browser to use all keyboard characters -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="all"> <!-- this links the html to the css -->
-    
-    <link rel="stylesheet" type="text/css" href="css/ABCstylesheet.css" media="all"> 
-    <!-- this links the html to the css -->
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="all">
+
+    <link rel="stylesheet" type="text/css" href="css/ABCstylesheet.css" media="all">
 
     <link rel="icon" href="images/favicon.png">
 
-   <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
-    
-
-
-    
+	<link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
 
     <title>Internet Alphabet</title>
-    
+
+	<!-- Get jQuery -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+  <!-- My Script -->
+  <script src="script.js"></script>
+
 </head>
 
 
@@ -31,34 +32,34 @@
 
 
 <div class="col-lg-11 list">
-<ul>
-<li><a target="_blank" href="https://en.wikipedia.org/wiki/A">A is for...</a></li>
-<li><a target="_blank" href="http://www.dictionary.com/list/b/1">B is for...</a></li>
-<li><a target="_blank" href="https://en.wikipedia.org/wiki/C_(programming_language)">C is for...</a></li>
-<li><a target="_blank" href="https://dlang.org/">D is for...</a></li>
-<li><a target=_blank href="http://www.eonline.com/">E is for...</a></li>
-<li><a target=_blank href="https://www.facebook.com/">F is for...</a></li>
-<li><a target="_blank" href="https://mail.google.com/mail/u/0/">G is for...</a></li>
-<li><a target="_blank" href="https://en.wikipedia.org/wiki/H">H is for...</a></li>
-<li><a target="_blank" href="https://en.wikipedia.org/wiki/I">I is for...</a></li>
-<li><a target="_blank" href="http://www.jsoftware.com/">J is for...</a></li>
-<li><a target="_blank" href="http://boards.4chan.org/k/">K is for...</a></li>
-<li><a target="_blank" href="http://deathnote.wikia.com/wiki/L_(character)">L is for...</a></li>
-<li><a target="_blank" href="http://www.imdb.com/title/tt0022100/">M is for...</a></li>
-<li><a target="_blank" href="https://www.netflix.com/browse">N is for...</a></li>
-<li><a target="_blank" href="https://www.cirquedusoleil.com/o">O is for...</a></li>
-<li><a target="_blank" href="https://stocktwits.com/symbol/P">P is for...</a></li>
-<li><a target="_blank" href="http://www.qthemusic.com/">Q is for...</a></li>
-<li><a target="_blank" href="https://www.r-project.org/">R is for...</a></li>
-<li><a target="_blank" href="https://stocktwits.com/symbol/S">S is for...</a></li>
-<li><a target="_blank" href="https://twitter.com/t?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">T is for...</a></li>
-<li><a target="_blank" href="https://en.wikipedia.org/wiki/U">U is for...</a></li>
-<li><a target="_blank" href="https://en.wikipedia.org/wiki/V_(2009_TV_series)">V is for...</a></li>
-<li><a target="_blank" href="http://www.starwoodhotels.com/whotels/index.html?language=en_US">W is for...</a></li>
-<li><a target="_blank" href="https://www.apple.com/ie/shop/buy-iphone/iphone-x">X is for...</a></li>
-<li><a target="_blank" href="https://www.youtube.com">Y is for...</a></li>
-<li><a target="_blank" href="https://en.wikipedia.org/wiki/Z/">Z is for...</a></li>
-</ul>
+	<ul>
+		<li><a id="a" target="_blank" href="https://en.wikipedia.org/wiki/A">A is for...</a></li>
+		<li><a id="b" target="_blank" href="http://www.dictionary.com/list/b/1">B is for...</a></li>
+		<li><a id="c" target="_blank" href="https://en.wikipedia.org/wiki/C_(programming_language)">C is for...</a></li>
+		<li><a id="d" target="_blank" href="https://dlang.org/">D is for...</a></li>
+		<li><a id="e" target=_blank href="http://www.eonline.com/">E is for...</a></li>
+		<li><a id="f" target=_blank href="https://www.facebook.com/">F is for...</a></li>
+		<li><a id="g" target="_blank" href="https://mail.google.com/mail/u/0/">G is for...</a></li>
+		<li><a id="h" target="_blank" href="https://en.wikipedia.org/wiki/H">H is for...</a></li>
+		<li><a id="i" target="_blank" href="https://en.wikipedia.org/wiki/I">I is for...</a></li>
+		<li><a id="j" target="_blank" href="http://www.jsoftware.com/">J is for...</a></li>
+		<li><a id="k" target="_blank" href="http://boards.4chan.org/k/">K is for...</a></li>
+		<li><a id="l" target="_blank" href="http://deathnote.wikia.com/wiki/L_(character)">L is for...</a></li>
+		<li><a id="m" target="_blank" href="http://www.imdb.com/title/tt0022100/">M is for...</a></li>
+		<li><a id="n" target="_blank" href="https://www.netflix.com/browse">N is for...</a></li>
+		<li><a id="o" target="_blank" href="https://www.cirquedusoleil.com/o">O is for...</a></li>
+		<li><a id="p" target="_blank" href="https://stocktwits.com/symbol/P">P is for...</a></li>
+		<li><a id="q" target="_blank" href="http://www.qthemusic.com/">Q is for...</a></li>
+		<li><a id="r" target="_blank" href="https://www.r-project.org/">R is for...</a></li>
+		<li><a id="s" target="_blank" href="https://stocktwits.com/symbol/S">S is for...</a></li>
+		<li><a id="t" target="_blank" href="https://twitter.com/t?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">T is for...</a></li>
+		<li><a id="u" target="_blank" href="https://en.wikipedia.org/wiki/U">U is for...</a></li>
+		<li><a id="v" target="_blank" href="https://en.wikipedia.org/wiki/V_(2009_TV_series)">V is for...</a></li>
+		<li><a id="w" target="_blank" href="http://www.starwoodhotels.com/whotels/index.html?language=en_US">W is for...</a></li>
+		<li><a id="x" target="_blank" href="https://www.apple.com/ie/shop/buy-iphone/iphone-x">X is for...</a></li>
+		<li><a id="y" target="_blank" href="https://www.youtube.com">Y is for...</a></li>
+		<li><a id="z" target="_blank" href="https://en.wikipedia.org/wiki/Z/">Z is for...</a></li>
+	</ul>
 </div>
 
 <div class="col-lg-3 footnote">
