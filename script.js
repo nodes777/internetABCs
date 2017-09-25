@@ -27,9 +27,31 @@ $.when.apply($, letters.map(function(letter) {
 
     results.forEach(function(item, index, arr){
     	console.log(item.Heading);
-    	var id = item.Heading.toLowerCase();
-    	var aTag = document.getElementById(id);
-    	console.log(aTag);
+      var linkID =item.Heading.toLowerCase();
+    	var spanID = item.Heading.toLowerCase()+"Text";
+    	var spanTag = document.getElementById(spanID);
+      var linkTag = document.getElementById(linkID);
+
+      if( item.RelatedTopics[1] !== undefined){
+        
+        var text = item.RelatedTopics[1].Text;
+        var url = item.RelatedTopics[1].FirstURL;
+        console.log(text +" : "+ url)
+      } else {
+        
+        var text = item.RelatedTopics[0].Text;
+        var url = item.RelatedTopics[0].FirstURL;
+
+        console.log(text +" : "+ url)
+      }
+      
+      //console.log(text);
+
+      var firstWord = text.substr(0, text.indexOf(" "));
+
+      spanTag.innerHTML = firstWord;
+
+      linkTag.href = url;
     	
     });
 
