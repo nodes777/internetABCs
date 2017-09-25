@@ -19,10 +19,18 @@ $.when.apply($, letters.map(function(letter) {
     // there will be one argument passed to this callback for each ajax call
     // each argument is of this form [data, statusText, jqXHR]
     for (var i = 0; i < arguments.length; i++) {
-        results.push(arguments[i][0]);
+        results.push(JSON.parse(arguments[i][0]));
     }
 
     // all data is now in the results array in order
     console.log(results);
+
+    results.forEach(function(item, index, arr){
+    	console.log(item.Heading);
+    	var id = item.Heading.toLowerCase();
+    	var aTag = document.getElementById(id);
+    	console.log(aTag);
+    	
+    });
 
 });
