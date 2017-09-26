@@ -63,6 +63,7 @@ text-decoration: none;
 .list
 {
 margin-top: 30px;
+padding-right: 5px;
 text-align: right;
 }
 
@@ -84,3 +85,12 @@ color: floralwhite;
 line-height: 110%;
 }
 
+
+img .hidey {
+    opacity: 0; /* Change this to .5 for 50% opacity */
+    -webkit-transition: .5s;
+       -moz-transition: .5s;
+        -ms-transition: .5s;
+         -o-transition: .5s;
+            transition: .5s;
+}
